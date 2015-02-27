@@ -57,7 +57,7 @@ public class AnnouncePlugin extends JavaPlugin {
 
 			// Start the messages
 			cycle();
-			task = new BroadcastMessageTask(this).runTaskTimer(this, 0, delay);
+			task = new BroadcastMessageTask(this).runTaskTimer(this, 0, delay * 20);
 		}
 
 		// Log status
