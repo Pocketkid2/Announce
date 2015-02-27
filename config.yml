@@ -1,0 +1,11 @@
+# Time (seconds) between messages
+delay: 600 # <- 10 min
+
+# Messages displayed in random order?
+random: false
+
+# List of messages to display (use quotes)
+messages:
+    - 'This is the first default message'
+    - 'If you are reading this, you might want to change your config!'
+    - 'Thanks for using iAnnounce by Pocketkid2!'
