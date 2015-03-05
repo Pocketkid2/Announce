@@ -35,8 +35,8 @@ public class AnnouncePlugin extends JavaPlugin {
 		saveDefaultConfig();
 
 		// Load values from config
-		getConfig().getInt("delay");
-		getConfig().getBoolean("random");
+		delay = getConfig().getInt("delay", 600);
+		random = getConfig().getBoolean("random", false);
 
 		// Initialize Random
 		if (random) {
