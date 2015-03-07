@@ -3,6 +3,7 @@ package com.github.pocketkid2.announce;
 import java.util.List;
 import java.util.Random;
 
+import org.bukkit.ChatColor;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.scheduler.BukkitTask;
 
@@ -47,6 +48,11 @@ public class AnnouncePlugin extends JavaPlugin {
 
 		// Load messages from config
 		messages = getConfig().getStringList("messages");
+
+		// Replace colors
+		for (String s : messages) {
+			s = ChatColor.translateAlternateColorCodes('&', s);
+		}
 
 		// Check for missing messages
 		if (messages.isEmpty()) {
