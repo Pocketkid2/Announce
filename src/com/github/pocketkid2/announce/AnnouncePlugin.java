@@ -50,8 +50,8 @@ public class AnnouncePlugin extends JavaPlugin {
 		messages = getConfig().getStringList("messages");
 
 		// Replace colors
-		for (String s : messages) {
-			s = ChatColor.translateAlternateColorCodes('&', s);
+		for (int i = 0; i < messages.size(); i++) {
+			messages.set(i, ChatColor.translateAlternateColorCodes('&', messages.get(i)));
 		}
 
 		// Check for missing messages
