@@ -4,6 +4,9 @@ delay: 600 # <- 10 min
 # Messages displayed in random order?
 random: false
 
+# Prefix to display in front of each message
+prefix: '[&4i&cA&6n&en&2o&3u&9n&1c&5e&r]' # <- Rainbow colored '[iAnnounce]'
+
 # List of messages to display (use quotes)
 messages:
     - 'This is the first default message'

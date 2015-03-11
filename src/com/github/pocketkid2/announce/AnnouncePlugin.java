@@ -1,5 +1,6 @@
 package com.github.pocketkid2.announce;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
@@ -23,6 +24,9 @@ public class AnnouncePlugin extends JavaPlugin {
 	// The config value for whether messages should be chosen at random
 	public boolean random;
 
+	// The prefix string to add before each message
+	public String prefix;
+
 	// The variable that represents the next message to be displayed (list
 	// index)
 	public int count;
@@ -32,6 +36,7 @@ public class AnnouncePlugin extends JavaPlugin {
 
 	@Override
 	public void onEnable() {
+
 		// Add config if it doesn't exist
 		saveDefaultConfig();
 
@@ -46,12 +51,21 @@ public class AnnouncePlugin extends JavaPlugin {
 			r = null;
 		}
 
-		// Load messages from config
-		messages = getConfig().getStringList("messages");
+		// Get prefix
+		prefix = getConfig().getString("prefix");
 
-		// Replace colors
-		for (int i = 0; i < messages.size(); i++) {
-			messages.set(i, ChatColor.translateAlternateColorCodes('&', messages.get(i)));
+		// Initialize message array
+		messages = new ArrayList<String>();
+
+		// Read out messages from config
+		List<String> m = getConfig().getStringList("messages");
+
+		// Process them
+		for (String s : m) {
+			StringBuilder sb = new StringBuilder(prefix);
+			sb.append(' ');
+			sb.append(s);
+			messages.add(ChatColor.translateAlternateColorCodes('&', sb.toString()));
 		}
 
 		// Check for missing messages
@@ -72,9 +86,11 @@ public class AnnouncePlugin extends JavaPlugin {
 
 	@Override
 	public void onDisable() {
-		// Cancel the message task
-		task.cancel();
-
+		// If we've got the messages running
+		if (task != null) {
+			// Cancel the message task
+			task.cancel();
+		}
 		// Log status
 		getLogger().info("Done!");
 	}
