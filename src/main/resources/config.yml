@@ -1,0 +1,19 @@
+# ----------------------------
+# iAnnounce Configuration File
+# ----------------------------
+
+# Should the messages be displayed in random order? (true or false)
+random-order: false
+
+# How long (in minutes) should we wait in-between sending messages? (number)
+message-delay: 15
+
+# What messages should be displayed? (list of messages)
+# NOTES:
+#   * the charater '&' will be replaced with the color character (see color codes here http://ess.khhq.net/mc/)
+#   * it is recommended that you surround your message with single quotes UNLESS your message contains them
+messages:
+  - 'This is the first default message'
+  - 'If you are seeing this, then iAnnounce is working correctly!'
+  - 'if you are seeing this, you may want to setup your messages in the config.yml!'
+  - '&3Thanks for using iAnnounce by Pocketkid2!'
