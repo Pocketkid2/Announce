@@ -1,9 +1,0 @@
-name: iAnnounce
-version: 0.3.0
-main: com.github.pocketkid2.announce.AnnouncePlugin
-author: Pocketkid2
-description: Configurable broadcast messages!
-permissions:
-    iannounce.recieve:
-        description: Allows you to recieve broadcasts and announcements
-        default: true
