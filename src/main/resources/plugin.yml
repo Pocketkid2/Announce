@@ -1,0 +1,8 @@
+name: iAnnounce
+version: 0.1.0
+author: Pocketkid2
+description: Broadcast server messages easily! With plenty of configuration options!
+permissions:
+    iannounce.recieve:
+        description: Allows you to recieve the broadcasts
+        default: true
