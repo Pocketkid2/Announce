@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.github.pocketkid2.announce</groupId>
   <artifactId>iAnnounce</artifactId>
-  <version>0.1.0</version>
+  <version>0.4.0</version>
   <name>iAnnounce</name>
   <description>A Java plugin for Bukkit/Spigot servers for broadcasting server messages, with options</description>
   <build>
