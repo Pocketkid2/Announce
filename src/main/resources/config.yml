@@ -8,6 +8,11 @@ random-order: false
 # How long (in minutes) should we wait in-between sending messages? (number)
 message-delay: 15
 
+# What prefix should be displayed in front of each message? (text string)
+# Note: for color codes, use these: http://ess.khhq.net/mc/
+# In this example, we are displaying the prefix [iAnnounce] where the letter colors make a rainbow
+message-prefix: '[&4i&cA&6n&en&2o&3u&9n&1c&5e&r] '
+
 # What messages should be displayed? (list of messages)
 # NOTES:
 #   * the charater '&' will be replaced with the color character (see color codes here http://ess.khhq.net/mc/)
