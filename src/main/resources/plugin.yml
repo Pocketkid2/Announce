@@ -1,6 +1,6 @@
 name: iAnnounce
 main: com.github.pocketkid2.announce.AnnouncePlugin
-version: 0.1.0
+version: 0.4.0
 author: Pocketkid2
 description: Broadcast server messages easily! With plenty of configuration options!
 permissions:
