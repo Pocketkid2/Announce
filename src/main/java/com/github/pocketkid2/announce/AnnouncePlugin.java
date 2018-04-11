@@ -10,6 +10,9 @@ import com.github.pocketkid2.announce.tasks.AnnounceTask;
 
 public class AnnouncePlugin extends JavaPlugin {
 
+	private static final int TICKS_PER_SEC = 20;
+	private static final int SECS_PER_MIN = 60;
+
 	public BukkitTask task = null;
 
 	public List<String> messages = null;
@@ -44,7 +47,7 @@ public class AnnouncePlugin extends JavaPlugin {
 		}
 
 		// Schedule task
-		task = new AnnounceTask(this).runTaskTimer(this, 0, delay * 1200);
+		task = new AnnounceTask(this).runTaskTimer(this, 0, delay * TICKS_PER_SEC * SECS_PER_MIN);
 
 		// Log status
 		getLogger().info("Done!");

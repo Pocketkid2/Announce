@@ -45,7 +45,7 @@ public class AnnounceTask extends BukkitRunnable {
 
 		// Display it
 		for (Player p : Bukkit.getOnlinePlayers()) {
-			if (p.hasPermission("iannounce.recieve")) {
+			if (p.hasPermission("announce.recieve")) {
 				p.sendMessage(message);
 			}
 		}

@@ -11,7 +11,7 @@ message-delay: 15
 # What prefix should be displayed in front of each message? (text string)
 # Note: for color codes, use these: http://ess.khhq.net/mc/
 # In this example, we are displaying the prefix [iAnnounce] where the letter colors make a rainbow
-message-prefix: '[&4i&cA&6n&en&2o&3u&9n&1c&5e&r] '
+message-prefix: '[&cA&6n&en&2o&3u&9n&1c&5e&r] '
 
 # What messages should be displayed? (list of messages)
 # NOTES:
@@ -21,4 +21,4 @@ messages:
   - 'This is the first default message'
   - 'If you are seeing this, then iAnnounce is working correctly!'
   - 'if you are seeing this, you may want to setup your messages in the config.yml!'
-  - '&3Thanks for using iAnnounce by Pocketkid2!'
+  - '&3Thanks for using Announce by Pocketkid2!'

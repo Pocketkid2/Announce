@@ -1,9 +1,9 @@
-name: iAnnounce
-main: com.github.pocketkid2.announce.AnnouncePlugin
-version: 0.4.0
-author: Pocketkid2
-description: Broadcast server messages easily! With plenty of configuration options!
+name: ${name}
+version: ${version}
+main: ${groupId}.${artifactId}.${name}Plugin
+description: ${description}
+author: ${author}
 permissions:
-    iannounce.recieve:
+    announce.recieve:
         description: Allows you to recieve the broadcasts
         default: true
