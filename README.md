@@ -1,2 +1,2 @@
-# iAnnounce
-A Bukkit/Spigot plugin for minecraft servers
+# Announce
+A simple announcement plugin for Minecraft servers
